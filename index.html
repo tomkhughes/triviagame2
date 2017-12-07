@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    ><title>Trivia Game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="text-center header">
+            <h1>NBA TRIVIA GAME</h1>
+        </div>
+<!-- Start Button -->
+        <div class="text-center">
+            <button class="btn btn-default btn-lg" id="startButton">Start Game</button>
+        </div>
+<!-- Time Remaining -->
+        <div class="row">
+            <div class="col-md-4 time-panel">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center">
+                        <h3 class="panel-title">TIME REMAINING</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="text-center">
+                            <h1 id="timeRemain"></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- Questions -->
+            <div class="col-md-8 question-panel">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center">
+                        <h3 class="panel-title questionAsk"></h3>
+                    </div>    
+                </div>
+                <div class="multipleChoice panel-body">
+                    <div class="row text-center">
+                        <div class="col-md-6">
+                            <button class="btn btn-default btn-lg button-choice" id="zero" value="0"></button>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn btn-default btn-lg button-choice" id="one" value="1"></button>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-6">
+                            <button class="btn btn-default btn-lg button-choice" id="two" value="2"></button>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn btn-default btn-lg button-choice" id="three" value="3"></button>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <div class="panel-body messsage-section">
+                <div class="row">
+                    <div class="col-md-6 text-center allMessages"></div>
+                    <div class="col-md-6 text-center wrongMessage"></div>
+                    <div class="col-md-6 text-center time-up"></div>
+
+                </div>
+            </div>
+            <div class="panel-body results-section">
+                <div class="row">
+                    <!-- <div class="col-md-6 text-center imageHolder">display image here</div> -->
+                    <div class="col-md-6 text-center displayResults"></div>
+                </div>
+            </div>
+        </div> 
+<!-- Restart Button -->
+    <div class="text-center">
+        <button class="btn btn-default btn-lg restart-button">Play Again</button>
+    </div>
+
+    </div>
+
+        
+
+        
+
+    
+    
+ <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
